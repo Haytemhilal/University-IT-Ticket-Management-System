@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Ticket Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>University IT Ticket Dashboard</h1>
+<div class="stats">
+    <div>Total: <span id="totalCount">0</span></div>
+    <div>Open: <span id="openCount">0</span></div>
+    <div>In Progress: <span id="progressCount">0</span></div>
+    <div>Resolved: <span id="resolvedCount">0</span></div>
+</div>
+        <div class="form-container">
+            <input type="text" id="title" placeholder="Ticket Title">
+            <input type="text" id="description" placeholder="Description">
+            <input type="text" id="assignedTo" placeholder="Assigned To">
+
+            <button onclick="createTicket()">Create Ticket</button>
+        </div>
+
+        <div id="tickets"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
